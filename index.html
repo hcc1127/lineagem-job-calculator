@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>天堂M 轉職袋子計算機</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>天堂M 轉職袋子計算機</h1>
+
+  <!-- 職業選擇 -->
+  <div class="form-group">
+    <label>轉職職業</label>
+    <select id="jobSelect"></select>
+  </div>
+
+  <!-- 轉職項目 -->
+  <div class="form-group">
+    <label>裝備數量</label>
+    <input type="number" id="equip" min="0">
+  </div>
+
+  <div class="form-group">
+    <label>技能等級</label>
+    <input type="number" id="skill" min="0">
+  </div>
+
+  <div class="form-group">
+    <label>名譽技能</label>
+    <input type="number" id="honor" min="0">
+  </div>
+
+  <!-- 背包售價 -->
+  <div class="form-group">
+    <label>袋子單價（鑽石）</label>
+    <input type="number" id="price" min="0">
+  </div>
+
+  <button onclick="calculate()">計算</button>
+
+  <div id="result" class="result"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="calculator.js"></script>
+</body>
+</html>
